@@ -24,12 +24,13 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         default=2
     )
-
+   
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse('detail', args=[str(self.id)])
+
 
 
 # Create your models here.
