@@ -19,17 +19,18 @@ class PostListView(ListView):
         context['posts_list'] = Post.objects.filter(
             status=status).order_by("created_on").reverse()
         return context
-
+        
 class DraftPostListView(ListView):
-    template_name = "posts/drafts.html"
+    template_name = 'posts/list.html'
     model = Post
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        status = Status.objects.get(id=2)
-        context['posts_list'] = Post.objects.filter(
-            status=status).order_by("created_on").reverse()
-        return context
+def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    status = Status.objects.get(id=2)
+    context["posts_list"] = Post.objects.filter(
+        status=status).filter(author=self.request.user
+        ).order_by("created_on").reverse()
+    return context
 
 class PostDetailView(DetailView):
     template_name = "posts/detail.html"
