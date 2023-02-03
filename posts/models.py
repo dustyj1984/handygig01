@@ -13,12 +13,17 @@ class Status(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='posts/', blank=True, null=True)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(
         get_user_model(), 
         on_delete=models.CASCADE
+        
+
     )
+
+
     status = models.ForeignKey(
         Status,
         on_delete=models.CASCADE,

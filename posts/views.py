@@ -6,8 +6,8 @@ from django.views.generic.edit import (
 )
 
 from django.urls import reverse_lazy
-from .models import Post, Status
 
+from .models import Post, Status
 
 class PostListView(ListView):
     template_name = "posts/list.html"
@@ -19,7 +19,7 @@ class PostListView(ListView):
         context['posts_list'] = Post.objects.filter(
             status=status).order_by("created_on").reverse()
         return context
-        
+
 class DraftPostListView(ListView):
     template_name = 'posts/list.html'
     model = Post
@@ -39,16 +39,24 @@ class PostDetailView(DetailView):
 class PostCreateView(CreateView):
     template_name = "posts/new.html"
     model = Post
-    fields = ['title', 'subtitle', 'body', 'author', 'status']
+    fields = ['title', 'subtitle', 'image', 'body', 'author', 'status']
+
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    
+        
+    
+
+
 
 class PostUpdateView(UpdateView):
     template_name = "posts/update.html"
     model = Post
-    fields = ['title', 'subtitle', 'body', 'author', 'status']
+    fields = ['title', 'subtitle', 'image', 'body', 'author', 'status']
+
+
 
     def test_func(self):
         post_obj = self.get_object()
