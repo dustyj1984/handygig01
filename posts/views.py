@@ -46,10 +46,6 @@ class PostCreateView(CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
     
-        
-    
-
-
 
 class PostUpdateView(UpdateView):
     template_name = "posts/update.html"
