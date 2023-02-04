@@ -1,14 +1,27 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<div>
-    <h1>Get your job done.</h1>
-</div>
 
-<div>
-    <p>Login and click here to see available gigs</p>
-    <p>Login and click here to post gigs</p>
-</div>
+
+
+<body class="homepage-body">
+
+
+    <div class="heading">
+
+        <h1 class="first-text">Get your jobs done</h1>
+        <h1 class="second-text">by the Handy.</h1>
+    </div>
+    <div class="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+    <div class="third-text">
+        <a href="{% url 'login' %}">Click Here</a> to log in and see available gigs.
+        <a href="{% url 'signup' %}">Click Here</a> to sign up.
+    </div>
+</body>
 {% endblock content %}

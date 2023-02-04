@@ -1,0 +1,69 @@
+.homepage-body {
+    background-image: url(/static/img/newpic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post-body {
+    background-image: url(/static/img/handy3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.signup-body {
+    background-image: url(/static/img/handy1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-body {
+    background-image: url(/static/img/about3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-body {
+    background-image: url(/static/img/floor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.heading {
+    position: relative;
+
+
+
+}
+
+.first-text {
+    position: absolute;
+    top: 30px;
+    Left: 15px;
+    font-size: 60px;
+
+}
+
+.second-text {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 60px;
+
+}
+
+.search {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    font-size: 30px;
+}
+
+.third-text {
+    position: absolute;
+    bottom: 250px;
+    left: 100px;
+    font-size: 25px;
+
+}
