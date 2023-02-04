@@ -1,34 +1,10 @@
+/* homepage css */
+
 .homepage-body {
     background-image: url(/static/img/newpic1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.post-body {
-    background-image: url(/static/img/handy3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.signup-body {
-    background-image: url(/static/img/handy1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.login-body {
-    background-image: url(/static/img/about3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.about-body {
-    background-image: url(/static/img/floor.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
 
 .heading {
     position: relative;
@@ -66,4 +42,36 @@
     left: 100px;
     font-size: 25px;
 
+}
+
+/* post css */
+
+.post-body {
+    background-image: url(/static/img/handy3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* signup css */
+
+.signup-body {
+    background-image: url(/static/img/handy1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* login css */
+
+.login-body {
+    background-image: url(/static/img/about3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* about css */
+
+.about-body {
+    background-image: url(/static/img/floor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
