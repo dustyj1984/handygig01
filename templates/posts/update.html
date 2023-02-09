@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+
 {% block title %}{{ post.title }}{% endblock title %}
 
 {% block content %}
@@ -8,13 +9,12 @@
 <small>Created by: {{ post.author }} | On: {{ post.created_on }} </small>
 <p>{{post.body}}</p>
 {% if user.username == post.author.username %}
-<img src="{{ post.image.url }}" alt="post image" width="300" height="300">
-<p>
-    <a href="{% url 'update' post.id %}" class="btn btn-primary">Edit</a>
-</p>
-<p>
-    <a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
-</p>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Update" class="btn btn-primary">
+</form>
 {% endif %}
 
 {% endblock content %}

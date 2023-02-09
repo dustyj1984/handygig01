@@ -13,7 +13,7 @@ class Status(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='posts/', blank=True, null=True)
+    image = models.ImageField(upload_to='uploads', blank=True, null=True)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(

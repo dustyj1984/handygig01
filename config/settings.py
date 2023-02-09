@@ -154,4 +154,4 @@ EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = env.str('DEFAULT_FROM_EMAIL')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = str (BASE_DIR.joinpath('media'))
+MEDIA_ROOT = BASE_DIR / 'uploads'
