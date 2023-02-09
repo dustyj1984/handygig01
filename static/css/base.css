@@ -1,6 +1,6 @@
 /* home page */
 
-.position-relative {
+.homepage-head {
 
     background-image: url(/static/img/handy3.jpg);
     background-repeat: no-repeat;
@@ -92,10 +92,12 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #cccccc;
+
 }
 
-.card-body {
+
+
+.card-body2 {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
