@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Sign up{% endblock title %}
 
+
+
+
+
+
 {% block content %}
+
 <body>
     <h1>Sign up</h1>
     <p>Sign up for a new account</p>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Sign up</button>
+        <a class="btn btn-outline-secondary" href="#">Sign Up</a>
     </form>
     <p>Already have an account?</p>
 
