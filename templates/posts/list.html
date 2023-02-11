@@ -4,31 +4,31 @@
 
 {% block content %}
 
-<body class="post-body">
+<body>
 
   <h1>Posts</h1>
   {% for post in post_list %}
 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{ post.title }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{ post.subtitle }}</h6>
-      <small>Created by {{ post.author }} | on: {{ post.created_on }}</small>
-      <p class="card-text">{{ post.body|truncatechars:500 }}</p>
-      <a href="{% url 'detail' post.id %}" class="card-link">Continue Reading</a>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+    
+
+
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 font-weight-normal">{{ post.title }}</h1>
+      <h2 class="lead font-weight-normal">{{ post.subtitle }}</h2>
+      <a class="btn btn-outline-secondary" href="#">Join Now</a>
     </div>
+    <div class="product-device box-shadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+
   </div>
 
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">{{ post.title }}</h2>
-      <p class="lead">Need to happen next week.</p>
-    </div>
-    <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-  </div>
+
   
-</div>
-  <br />
+
+      
+ 
 
 </body>
 {% endfor %}
