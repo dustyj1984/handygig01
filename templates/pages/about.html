@@ -3,16 +3,47 @@
 {% block title %}About{% endblock title %}
 
 {% block content %}
+{% load static %}
+<body>
 
-<body class="about-body">
-    <h1>About</h1>
-    <p>HandyGig is a community born into the world of the Gig-Economy to support Gig-Chiefs, professionals, and artisans
-        can
-        engage opportunities in a safe and reliable way that protects both the contractor and the Gig-Chief. So Gig-out
-        and
-        get your targets met and turn your to-do list into a to-done list. Engage your Handy_Gig community and get the
-        job
-        done.</p>
+    <div class="jumbotron">
+        <div class="container">
+            <div>
+            <img src="{% static 'img/handyman.jpg' %}" alt="Handygig Logo" width="200" height="200">
+            </div>
+           
+            <h1 class="display-3">About Handygig</h1>
+            <h2 class="lead">A Good Subtitle</h2>
+            <p>HandyGig is a platform for people to find and post jobs. It is a place where people can find jobs that they can do and get paid for. It is also a place where people can post jobs that they need done and find people to do them. </p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Join Now &raquo;</a></p>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr>
+
 
 </body>
 {% endblock %}

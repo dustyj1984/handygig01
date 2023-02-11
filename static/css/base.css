@@ -1,77 +1,46 @@
-/* homepage css */
-
-.homepage-body {
-    background-image: url(/static/img/newpic1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.heading {
-    position: relative;
 
 
-
-}
-
-.first-text {
-    position: absolute;
-    top: 30px;
-    Left: 15px;
-    font-size: 60px;
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 
 }
 
-.second-text {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    font-size: 60px;
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
 
 }
 
-.search {
-    position: absolute;
-    top: 350px;
-    left: 200px;
-    font-size: 30px;
-}
-
-.third-text {
-    position: absolute;
-    bottom: 250px;
-    left: 100px;
-    font-size: 25px;
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
 
 }
 
-/* post css */
+/*About us*/
 
-.post-body {
-    background-image: url(/static/img/handy3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.col-md-4 {
+
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: aqua;
+    
 }
 
-/* signup css */
 
-.signup-body {
-    background-image: url(/static/img/handy1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-/* login css */
 
-.login-body {
-    background-image: url(/static/img/about3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* about css */
-
-.about-body {
-    background-image: url(/static/img/floor.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
