@@ -5,12 +5,16 @@
 {% block content %}
 
 <body>
+    
 
 
-    <h1>Logout</h1>
-    <p>You have been logged out.</p>
+    <h1 class="h3 mb-3 font-weight-normal">You have been logged out</h1>
+    <p class="mt-5 mb-3 text-muted">Click the button below to log back in</p>
+
 
     <a href="{% url 'login' %}">Click Here</a> to log back in.
+
+
 
 </body>
 {% endblock content %}
