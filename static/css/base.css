@@ -1,7 +1,18 @@
+/* home page */
+
+.homepage-head {
+
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 
 
 .btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -27,7 +38,16 @@
 
 }
 
-/*About us*/
+/*About page*/
+
+.about-page {
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #cccccc;
+}
 
 .col-md-4 {
 
@@ -37,10 +57,62 @@
     padding: 0 15px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: aqua;
-    
+    background-color: #cccccc;
+
+}
+
+/* Sign-up page*/
+
+.signup-body {
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #cccccc;
+}
+
+/* New post page */
+
+.new-page {
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    background-color: #cccccc;
+}
+
+/* Post page */
+
+.post-body {
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 
 
 
+.card-body2 {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #cccccc;
+}
 
+
+
+/* login page */
+
+.login-body {
+    background-image: url(/static/img/handy3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #cccccc;
+}
