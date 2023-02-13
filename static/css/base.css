@@ -122,15 +122,96 @@
 
 /* Sign-up page*/
 
-.signup-body {
-
+.signup-page {
     background-image: url(/static/img/handy3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #cccccc;
+    background-size: 100%;
 }
+
+.homepage-head .display-4 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.homepage-head .lead {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.homepage-head .btn {
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.homepage-head .btn:hover {
+    color: #ffffff;
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    
+
+}
+
+.form-group p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+.form-group a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
 
 /* New post page */
 
