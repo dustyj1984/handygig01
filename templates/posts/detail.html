@@ -18,6 +18,7 @@
 <p>
     <a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
 </p>
+<a class="btn btn-outline-secondary" href="{% url 'list' %}">Back to list</a>
 {% endif %}
 
 {% endblock content %}
