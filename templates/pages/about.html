@@ -1,38 +1,45 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}About{% endblock title %}
 
 {% block content %}
-{% load static %}
+
 
 <body class="about-page">
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">About Handygig</h1>
-        <h2 class="lead">A Good Subtitle</h2>
-        <p>HandyGig is a platform for people to find and post jobs. It is a place where people can find jobs that they can do and get paid for. It is also a place where people can post jobs that they need done and find people to do them. </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Join Now &raquo;</a></p>
+  <div class="aboutpage-head position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="about-container">
+      <h1 class="display-3">About Handygig</h1>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Join Now &raquo;</a></p>
+    </div>
+  </div>
+  <div class="container">
+
+    <p>HandyGig is a platform for people to find and post jobs. It is a place where people can find jobs that they
+      can
+      do and get paid for. It is also a place where people can post jobs that they need done and find people to do
+      them. </p>
+
+
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h2>Find Jobs</h2>
+        <p>Find jobs that you can do and get paid for. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Post Jobs</h2>
+        <p>Post jobs that you need done and find people to do them. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Get Paid</h2>
+        <p>Get paid for the jobs that you do. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </body>
+</body>
 {% endblock %}

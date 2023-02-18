@@ -1,11 +1,11 @@
 /* navbar */
 
 .navbar {
-    display: flex;    
-    
+    display: flex;
+
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: black;
     padding: 0 20px;
     position: fixed;
     top: 0;
@@ -50,7 +50,7 @@
 }
 
 .navbar-right {
-    float: right;
+    float: left;
 }
 
 /* footer */
@@ -61,13 +61,17 @@
 
 .homepage-head {
 
-    background-image: url(/static/img/handy3.jpg);
+    background-image: url(/static/img/handyman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 600px;
 
 }
 
+.home-body {
+    background-color: #cccccc;
+}
 
 .btn {
     background-color: #4CAF50;
@@ -99,13 +103,25 @@
 
 /*About page*/
 
-.about-page {
-    background-image: url(/static/img/handy3.jpg);
+.aboutpage-head {
+    background-image: url(/static/img/other.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: 600px;
+
+}
+
+.display-3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.about-page {
+
     background-color: #cccccc;
+
 }
 
 .col-md-4 {
@@ -126,6 +142,8 @@
     background-image: url(/static/img/handy3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center;
+
 }
 
 .homepage-head .display-4 {
@@ -166,7 +184,7 @@ form {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    
+
 
 }
 
@@ -175,7 +193,7 @@ form {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
-    
+
 
 }
 
@@ -211,38 +229,48 @@ form {
     text-decoration: none;
 }
 
+/* List page */
+
+.post-body {
+    margin-top: 10%;
+    background-color: #cccccc;
+}
+
+.list-group {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 /* New post page */
 
 .new-page {
+
     background-image: url(/static/img/handy3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     background-color: #cccccc;
-}
-
-/* Post page */
-
-.post-body {
-    background-image: url(/static/img/handy3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 
 }
 
-
-
-.card-body2 {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    background-color: #cccccc;
+.p-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -250,10 +278,17 @@ form {
 /* login page */
 
 .login-body {
-    background-image: url(/static/img/handy3.jpg);
+    background-image: url(/static/img/newpic1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: 100%;
+
+
+}
+
+
+
+/* Detail page */
+
+.detail-body {
     background-color: #cccccc;
 }

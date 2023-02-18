@@ -1,37 +1,39 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Login{% endblock title %}
 
 {% block content %}
 
-<body class="text-center">
+<body class="login-body">
 
-    
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <p class="mt-5 mb-3 text-muted">Already have an account?</p>
-
-
-
-    <form method="POST">
-        
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Log in" class="btn btn-success">
-    </form>
-    <br>
-    <small>Forgot your password? <a href="{% url 'password_reset' %}">Click Here</a>" to reset it"</small>
+    <div class="text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <p class="mt-5 mb-3 text-muted">Already have an account?</p>
 
 
 
-    <p class="mt-5 mb-3 text-muted">Don't have an account?</p>
-    <a class="btn btn-outline-secondary" href="{% url 'signup' %}">Sign Up</a>
+        <form method="POST">
+
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Log in" class="btn btn-success">
+        </form>
+        <br>
+        <small>Forgot your password? <a href="{% url 'password_reset' %}">Click Here</a>" to reset it"</small>
 
 
-    <br>
-    
 
-    <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+        <p class="mt-5 mb-3 text-muted">Don't have an account?</p>
+        <a class="btn btn-outline-secondary" href="{% url 'signup' %}">Sign Up</a>
 
+
+        <br>
+
+
+        <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+    </div>
 
 
 
