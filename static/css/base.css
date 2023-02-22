@@ -1,22 +1,35 @@
+
+.home-body {
+    background-image: url(/static/img/background.jpg);    
+    background-size: 100%;
+    background-position: center;
+
+    
+    
+}
 /* navbar */
 
 .navbar {
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+    
 
 
 .navbar a {
-    display: inline;
-
     float: left;
     display: block;
     color: #f2f2f2;
@@ -61,17 +74,100 @@
 
 .homepage-head {
 
-    background-image: url(/static/img/handyman.jpg);
+    background-image: url(/static/img/hero2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    height: 600px;
-
+   
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.home-body {
-    background-color: #cccccc;
+.home-header
+{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.home-body .display-1 {
+   
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.home-body .display-2 {
+   
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.home-body .card-text
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.jumbotron {
+    background-image: url(/static/img/hero2.jpg);
+  
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
 
 .btn {
     background-color: #4CAF50;
@@ -79,102 +175,187 @@
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 2px 20px;
     cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    
+
 
 }
 
-.display-4 {
-    font-size: 2.5rem;
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); 
+
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.carousel-caption h1 {
+    font-size: 4.5rem;
     font-weight: 300;
     line-height: 1.2;
-
+    margin-bottom: 10px;
 }
 
-.lead {
-    font-size: 1.25rem;
+.carousel-caption h3 {
+    font-size: 1.7rem;
     font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
 
+.carousel-caption .btn {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+.carousel-caption .btn-default {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+.carousel-caption .btn-default:hover {
+    background-color: #4CAF50;
+    color: #fff;
 }
 
 /*About page*/
 
-.aboutpage-head {
-    background-image: url(/static/img/other.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+.about-page {
+    background-image: url(/static/img/background.jpg);
 
 }
 
-.display-3 {
-    font-size: 2.5rem;
+.about-page-head {
+    background-image: url(/static/img/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 100px;
+}
+
+.about-section .about-header {
+    margin-bottom: 50px;
+
+}
+
+.about-section .about-header h1 {
+    font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
-    color: #ffffff;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.about-page {
-
-    background-color: #cccccc;
-
+.about-section .about-header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.col-md-4 {
-
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding: 0 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #cccccc;
-
+.about-section .about-content {
+    margin-bottom: 50px;
 }
+
+.about-section .about-image {
+    margin-bottom: 50px;
+}
+
+.about-section .about-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 
 /* Sign-up page*/
 
 .signup-page {
-    background-image: url(/static/img/handy3.jpg);
+    background-image: url(/static/img/sign-up.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
 
 }
 
-.homepage-head .display-4 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
 
-.homepage-head .lead {
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 300;
-}
 
-.homepage-head .btn {
-    color: #ffffff;
-    background-color: #4CAF50;
-    border-color: #4CAF50;
-    font-size: 1.25rem;
-    font-weight: 300;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.homepage-head .btn:hover {
-    color: #ffffff;
-    background-color: #45a049;
-    border-color: #45a049;
-}
 
 form {
     width: 100%;
@@ -231,20 +412,70 @@ form {
 
 /* List page */
 
-.post-body {
-    margin-top: 10%;
-    background-color: #cccccc;
+.list-body {
+    background-image: url(/static/img/background.jpg);
+ 
 }
 
-.list-group {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 40px;
+.list-header {  
+    background-image: url(/static/img/hero2.jpg);    
+    margin-top: 75px;
+    margin-bottom: 50px;
+    padding: 0; 
+    align-items: center;
+    text-align: center;
+    font-size: px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color : #000000;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 100px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    
+
+
+   
+   
+   
 }
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+
+
+
+}
+
+.card-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color : #000000;
+
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color : #000000;
+}
+
 
 
 
@@ -260,6 +491,7 @@ form {
     background-attachment: fixed;
     background-color: #cccccc;
 
+
 }
 
 .p-form {
@@ -271,14 +503,53 @@ form {
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
+
+.p-form p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.p-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+.p-form button:hover {
+    background-color: #45a049;
+}
+
+.p-form a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Edit post page */
 
 
 
 /* login page */
 
 .login-body {
-    background-image: url(/static/img/newpic1.jpg);
+    background-image: url(/static/img/sign-in.png);
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -290,5 +561,24 @@ form {
 /* Detail page */
 
 .detail-body {
-    background-color: #cccccc;
+    background-image: url(/static/img/background.jpg);
+    background repeat: no-repeat;
+    background-size: 100%;  
+  
+
 }
+
+.detail-body .card {
+    width: 100%;
+    max-width: 500px;
+   
+    padding: 30px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+    
+  
