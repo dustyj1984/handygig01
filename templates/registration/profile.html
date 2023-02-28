@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
 
+{% block title %}Profile{% endblock title %}
 
-{% load crispy_forms_tags %}
 
 {% block content %}
 
-<h1>Hello{{ user.username }}!</h1>
+<h1>Hello {{ user.username }}!</h1>
 
 <p>Here is your profile:</p>
 
@@ -14,8 +15,11 @@
         <img class="rounded-circle account-img" src="{{ user.profile.image.url }}" />
         <div class="media-body">
             <h2 class="account-heading">{{ user.username }}</h2>
-            <p class="text-secondary">{{ user.email }}</p>
+            <h3>{{ user.location }}</h3>
+            <p class="text-secondary">{{ user.profile.bio }}</p>
         </div>
+        <a href="{% url 'profile_update' %}" class="btn btn-primary">Update</a>
+        <a href="{% url 'profile_delete' %}" class="btn btn-danger">Delete</a>
     </div>
     <!-- FORM HERE -->
 </div>
