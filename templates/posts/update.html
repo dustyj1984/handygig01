@@ -1,20 +1,23 @@
 {% extends 'base.html' %}
 
+{% block title %}Update Post{% endblock title %}
+
+{% block content %}
+<h1>Update Post</h1>
 
 {% block title %}{{ post.title }}{% endblock title %}
 
 {% block content %}
 <h1>{{ post.title }}</h1>
 <h5>{{ post.subtitle }}</h5>
-<small>Created by: {{ post.author }} | On: {{ post.created_on }} </small>
 <p>{{post.body}}</p>
-{% if user.username == post.author.username %}
+<img class="rounded-circle account-img" src="{{ post.image.url }}" />
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
 
     <input type="submit" value="Update" class="btn btn-primary">
 </form>
-{% endif %}
+
 
 {% endblock content %}
