@@ -1,25 +1,37 @@
 {% extends 'base.html' %}
 
-
 {% load static %}
 
 {% block title %}Post Comments{% endblock title %}
 
 {% block content %}
-{% for comment in comment_list %}
-<div class="card">
-    <div class="card-body">
-        <h1>{{ comment.title }}</h1>
-        <h5>{{ comment.subtitle }}</h5>
+<article class="post">
+    <h1>{{ post.title }}</h1>
+    <h5>{{ post.subtitle }}</h5>
+    <small>Created by: {{ post.author }} | On: {{ post.created_on }} </small>
+    <p>{{post.body}}</p>
+    {% if user.username == post.author.username %}
+    <p>
+        <a href="{% url 'update' post.id %}" class="btn btn-primary">Update</a>
+        <a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
+    {% endif %}
+    <a class="btn btn-outline-secondary" href="{% url 'list' %}">Back to list</a>
+
+    <h2>Comments</h2>
+    {% for comment in post.comments.all %}
+    <div class="comment">
+        <p>{{ comment.body }}</p>
         <small>Created by: {{ comment.author }} | On: {{ comment.created_on }} </small>
-        <p>{{comment.body}}</p>
-        {% if user.username == comment.author.username %}
-        <p>
-            <a href="{% url 'update' comment.id %}" class="btn btn-primary">Update</a>
-            <a href="{% url 'delete' comment.id %}" class="btn btn-danger">Delete</a>
-        {% endif %}
-        <a class="btn btn-outline-secondary" href="{% url 'list' %}">Back to list</a>
     </div>
+    {% endfor %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Comment" class="btn btn-primary">
+    </form>
+</article>
+
+{% endblock content %}
 
 
 
