@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %}Post Comments{% endblock title %}
+
+{% block content %}
+{% for comment in comment_list %}
+<div class="card">
+    <div class="card-body">
+        <h1>{{ comment.title }}</h1>
+        <h5>{{ comment.subtitle }}</h5>
+        <small>Created by: {{ comment.author }} | On: {{ comment.created_on }} </small>
+        <p>{{comment.body}}</p>
+        {% if user.username == comment.author.username %}
+        <p>
+            <a href="{% url 'update' comment.id %}" class="btn btn-primary">Update</a>
+            <a href="{% url 'delete' comment.id %}" class="btn btn-danger">Delete</a>
+        {% endif %}
+        <a class="btn btn-outline-secondary" href="{% url 'list' %}">Back to list</a>
+    </div>
+
+
+
