@@ -1,13 +1,15 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView 
 from django.views.generic.edit import ( 
     CreateView,
     UpdateView,
     DeleteView,
+
 )
 
 from django.urls import reverse_lazy
 
-from .models import Post, Status
+from .models import Post, Status, Comment
+from .forms import CommentForm
 
 class PostListView(ListView):
     template_name = "posts/list.html"
@@ -62,6 +64,30 @@ class PostDeleteView(DeleteView):
     template_name = "posts/delete.html"
     model = Post
     success_url = reverse_lazy('list')
+
+class PostCommentView(CreateView):
+    template_name = "posts/comment.html"
+    model = Comment
+    form_class = CommentForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        post = Post.objects.get(id=self.kwargs['pk'])
+        context['post'] = post
+        context["comments"] = Comment.objects.filter(post=post)
+        return context
+
+    def form_valid(self, form):
+        form.instance.post = Post.objects.get(id=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy('detail', kwargs={'pk': self.kwargs['pk']})
+   
+
+
+
+
 
 
 
