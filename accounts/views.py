@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, TemplateView
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from .forms import ProfileUpdateForm
@@ -32,7 +32,11 @@ class ProfileCreateView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'registration/profile_create.html'
 
+class PaypalReturnView(TemplateView):
+    template_name = 'paypal_success.html'
 
+class PaypalCancelView(TemplateView):
+    template_name = 'paypal_cancel.html'
 
 
 

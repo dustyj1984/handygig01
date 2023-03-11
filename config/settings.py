@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'posts',
+    'paypal.standard.ipn',
+    
 
 ]
 

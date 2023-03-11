@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Payment Successful{% endblock title %}
+
+{% block content %}
+
+<body>
+    <h1> Payment Successful</h1>
+
+    <p> Your payment is a success. </p>
+    <a class="nav-link" href="{% url 'home' %}">Click here to return to home page</a>
+
+</body>
+
+{% endblock content %}

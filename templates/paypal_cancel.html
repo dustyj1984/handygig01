@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Payment Canceled{% endblock title %}
+
+{% block content %}
+
+<body>
+    <h1> Payment Canceled</h1>
+
+    <p> Your payment has been canceled. </p>
+    <a class="nav-link" href="{% url 'home' %}">Click here to return to home page</a>
+
+</body>
+
+{% endblock content %}
